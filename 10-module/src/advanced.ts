@@ -7,13 +7,13 @@ interface Blogger {
   follower: number;
 }
 // type EngineerBlogger = Engineer & Blogger;
-interface EngineerBlogger extends Engineer, Blogger { }
+interface EngineerBlogger extends Engineer, Blogger {}
 
 const quill: EngineerBlogger = {
   name: 'Quill',
   role: 'front-end',
-  follower: 1000
-}
+  follower: 1000,
+};
 type NumberBoolean = number | boolean;
 type StringNumber = string | number;
 type Mix = NumberBoolean & StringNumber;
@@ -39,7 +39,7 @@ function describeProfile(nomadWorker: NomadWorker) {
   }
 }
 class Dog {
-  kind: 'dog' = 'dog'
+  kind: 'dog' = 'dog';
   speak() {
     console.log('bow-wow');
   }
@@ -68,7 +68,8 @@ havePet(new Bird());
 
 const input = document.getElementById('input') as HTMLInputElement;
 input.value = 'initial input value';
-(<HTMLInputElement>document.getElementById('input')).value = 'initial input value';
+(<HTMLInputElement>document.getElementById('input')).value =
+  'initial input value';
 
 interface Designer {
   name: string;
@@ -76,19 +77,19 @@ interface Designer {
 }
 const designer: Designer = {
   name: 'Quill',
-  role: 'web'
-}
+  role: 'web',
+};
 interface DownloadedData {
   id: number;
   user?: {
     name?: {
       first: string;
       last: string;
-    }
-  }
+    };
+  };
 }
 const downloadedData: DownloadedData = {
-  id: 1
-}
+  id: 1,
+};
 console.log(downloadedData.user?.name?.first);
 const userData = downloadedData.user ?? 'no-user';

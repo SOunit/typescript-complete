@@ -1,4 +1,7 @@
-function copy<T extends { name: string }, U extends keyof T>(value: T, key: U): T {
+function copy<T extends { name: string }, U extends keyof T>(
+  value: T,
+  key: U
+): T {
   value[key];
   return value;
 }
@@ -27,15 +30,15 @@ interface Todo {
   title: string;
   text: string;
 }
-type Todoable = Partial<Todo>
-type ReadTodo = Readonly<Todo>
+type Todoable = Partial<Todo>;
+type ReadTodo = Readonly<Todo>;
 
-const fetchData: Promise<string> = new Promise(resolve => {
+const fetchData: Promise<string> = new Promise((resolve) => {
   setTimeout(() => {
     resolve('hello');
   }, 3000);
-})
-fetchData.then(data => {
+});
+fetchData.then((data) => {
   data.toUpperCase();
-})
+});
 const vegetables: Array<string> = ['Tomato', 'Broccoli', 'Asparagus'];

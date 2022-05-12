@@ -14,4 +14,4 @@ let onlyUndefined: undefined = undefined;
 if (nullableMessage) {
   nullableMessage.toUpperCase();
 }
-echo.call(null, 'hi')
+echo.call(null, 'hi');

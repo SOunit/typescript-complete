@@ -4,8 +4,7 @@ abstract class Person {
     if (age > 17) return true;
     return false;
   }
-  constructor(readonly name: string, protected age: number) {
-  }
+  constructor(readonly name: string, protected age: number) {}
   incrementAge() {
     this.age += 1;
   }

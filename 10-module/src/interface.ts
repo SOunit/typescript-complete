@@ -5,7 +5,7 @@ interface addFunc {
 let addFunc: addFunc;
 addFunc = (n1: number, n2: number) => {
   return n1 + n2;
-}
+};
 
 interface Nameable {
   name?: string;
@@ -13,15 +13,18 @@ interface Nameable {
 }
 const nameable: Nameable = {
   name: 'Quill',
-  nickName: 'Quilla'
-}
+  nickName: 'Quilla',
+};
 interface Human extends Nameable {
   age: number;
   greeting(message: string): void;
 }
 class Developer implements Human {
-  constructor(public age: number, public experience: number, public name?: string) {
-  }
+  constructor(
+    public age: number,
+    public experience: number,
+    public name?: string
+  ) {}
   greeting(message: string) {
     console.log(message);
   }
@@ -32,10 +35,10 @@ const tmpDeveloper = {
   experience: 3,
   greeting(message: string) {
     console.log(message);
-  }
-}
+  },
+};
 const user: Human = new Developer(38, 3);
 if (user.name) {
-  user.name.toUpperCase()
+  user.name.toUpperCase();
 }
 console.log(user.name);
