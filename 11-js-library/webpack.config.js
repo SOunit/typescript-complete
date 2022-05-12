@@ -3,7 +3,7 @@
 const path = require('path');
 
 module.exports = {
-  entry: './src/foot-app/main.ts',
+  entry: './src/library',
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
