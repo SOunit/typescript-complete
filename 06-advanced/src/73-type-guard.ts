@@ -62,6 +62,8 @@ namespace tmp {
     }
   }
 
+  havePet(new Bird());
+
   // 1. typeof / only for 7 types
   // 2. in / to decide type
   // 3. instanceof / to decide type
