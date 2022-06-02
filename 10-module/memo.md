@@ -74,3 +74,12 @@ module: {
     ],
   },
 ```
+
+- remove extension from TS files
+- add `resolve` to `webpack.config.js`
+
+```
+  resolve: {
+    extensions: ['.ts', '.js'],
+  },
+```
