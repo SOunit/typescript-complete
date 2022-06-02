@@ -5,7 +5,12 @@
 - es-module approach
   - not good import for ts
 - webpack approach
-  -
+  - for not modern browser
+  - single http request to get resource
+  - code optimization
+  - add plugin
+  - multiple file types
+  - HMR / Hot Module Replacement server
 
 ## multiple script tags
 
@@ -27,3 +32,20 @@
 ```
 import { Foodable } from './interfaces.js';
 ```
+
+## webpack approach
+
+- create `package.json`
+- install package
+
+```
+npm i -D webpack webpack-cli
+```
+
+- add script to `package.json`
+
+```
+"build": "webpack"
+```
+
+- add `webpack.config.js`

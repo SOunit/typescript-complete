@@ -1,3 +1,3 @@
-import { Foods } from './foods.js';
+import { Foods } from './foods';
 
 const foods = Foods.getInstance();
