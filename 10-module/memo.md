@@ -1,9 +1,28 @@
+# summary
+
+## for bundle TS files
+
+- webpack / ts-loader / webpack-dev-server
+  - no tsc build
+  - webpack load ts and run!
+
+## for single TS file
+
+- `tsc --watch`
+  - tsc create build files
+  - html file reload js files
+
 # how to separate files
 
 - multiple script tag
+
   - fragile, easy to break
+
 - es-module approach
+
   - not good import for ts
+  - working with `tsc`
+
 - webpack approach
   - for not modern browser
   - single http request to get resource
