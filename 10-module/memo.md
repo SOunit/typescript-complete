@@ -49,3 +49,28 @@ npm i -D webpack webpack-cli
 ```
 
 - add `webpack.config.js`
+
+### devtool
+
+### ts-loader
+
+- install
+
+```
+npm i -D ts-loader typescript
+```
+
+- add `module`, how to download files
+  - use `ts-loader` for `.ts` files
+
+```
+module: {
+    rules: [
+      {
+        test: /\.ts$/,
+        use: 'ts-loader',
+        exclude: /node_modules/,
+      },
+    ],
+  },
+```
