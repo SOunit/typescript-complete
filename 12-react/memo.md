@@ -42,3 +42,9 @@ extensions: ['.tsx', '.ts', '.js'],
 },
 
 ```
+
+# create-react-app
+
+```
+npx create-react-app 02-create-react-app --template typescript
+```
