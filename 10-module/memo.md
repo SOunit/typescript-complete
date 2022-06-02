@@ -12,3 +12,7 @@
   ```
   <script src="dist/food-app.js" type="module"></script>
   ```
+  - import needs extension
+  ```
+  import { Foodable } from './interfaces.js';
+  ```
