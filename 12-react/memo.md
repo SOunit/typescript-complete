@@ -6,6 +6,7 @@
 - type for hooks, redux, router
   - hover and check type
   - typescript is document
+  - some library has TS document, but not detail in average
 
 # react / webpack
 
