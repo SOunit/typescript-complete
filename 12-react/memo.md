@@ -4,6 +4,8 @@
 - react / typescript / create-react-app
 - type for props
 - type for hooks, redux, router
+  - hover and check type
+  - typescript is document
 
 # react / webpack
 
@@ -48,3 +50,9 @@ extensions: ['.tsx', '.ts', '.js'],
 ```
 npx create-react-app 02-create-react-app --template typescript
 ```
+
+- react-script using webpack internally
+- type for props
+  - type / interface both is ok
+    - type for personal type
+    - interface for 3rd party package
