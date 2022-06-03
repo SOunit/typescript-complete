@@ -15,3 +15,12 @@ tsc --init
 
 - typescript do not understand commonjs import / export
 - es-module import / export is recommended
+
+## node import / export
+
+- module.exports = target
+- target can be anything, object / function / etc.
+
+```
+module.exports = {}
+```
